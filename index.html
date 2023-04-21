@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div><a href="index.html"><img id="logo" src="/images/logo.png"></a></div>
+            <div id="search-bar-and-icon"><input type="search" name="search" id="search-bar" onkeyup="searchChange()"
+                    placeholder="Search here..."><img id="search-icon" src="/images/search.png"></div>
+            <div><a href="checkout.html"><img id="cart" src="/images/cart.png"></a></div>
+        </div>
+    </header>
+
+    <div id="dropdown-background">
+        <select name="dropdown-sortby" id="drop-sortby" onchange="ascendingOrDescending(this)">
+            <option value="ascending">Ascending</option>
+            <option value="descending">Descending</option>
+        </select>
+    </div>
+    <div id="product-table">
+
+    </div>
+</body>
+<script src="index.js" defer></script>
+
+</html>

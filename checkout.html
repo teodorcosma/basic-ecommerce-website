@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+
+    <link href="reset.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="checkout.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div><a href="index.html"><img id="logo" src="/images/logo.png"></a></div>
+            <div><a href="checkout.html"><img id="cart" src="/images/cart.png"></a></div>
+        </div>
+    </header>
+
+
+    <div id="checkout-background">
+        <div id="checkout-table">
+            <div id="checkout-item-box">
+
+                <div id="checkout-images">
+                    <img id="checkout-img" data-value="${element.id}" src="images/iphone.png" />
+                </div>
+
+                <div id="checkout-details">
+                    <p id="checkout-title">IPHONE 16</p>
+                    <div id="prices">
+                        <div id="checkout-final-price">1000 $</div>
+                        <div id="checkout-initial-price">1300 $</div>
+                        <div id="checkout-discount">(20% off)</div>
+                    </div>
+
+                    <select id="checkout-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <img id="checkout-delete" data-value="${element.id}" src="images/delete.png" />
+                </div>
+
+
+            </div>
+
+            <div id="checkout-item-box">
+
+                <div id="checkout-images">
+                    <img id="checkout-img" data-value="${element.id}" src="images/iphone.png" />
+                </div>
+
+                <div id="checkout-details">
+                    <p id="checkout-title">IPHONE 16</p>
+                    <div id="prices">
+                        <div id="checkout-final-price">1000 $</div>
+                        <div id="checkout-initial-price">1300 $</div>
+                        <div id="checkout-discount">(20% off)</div>
+                    </div>
+
+                    <select id="checkout-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <img id="checkout-delete" data-value="${element.id}" src="images/delete.png" />
+                </div>
+            </div>
+
+            <div id="checkout-total">
+                
+                    <div id="total-text">Total:</div>
+                    <div id="total-number">1000$</div>
+                    <button id="checkout-payment">Go to payment</button>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="checkout.js" defer></script>
+
+</html>

@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-family:'Montserrat', 'Gilroy', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Montserrat', 'Gilroy', sans-serif;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+
+
+
+#dropdown-background {
+    height: 40px;
+}
+
+#drop-sortby {
+    float: right;
+    margin: 15px 30px 0px 0px;
+    display: block;
+    padding: 3px 5px;
+    border: none;
+    background-color: #F5F5F5;
+    outline: none;
+}
+
+#drop-sortby:hover {
+    cursor: pointer;
+}
+
+#product-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+
+
+
+#item-box {
+    min-height: 250px;
+    background-color: #fff;
+    margin: 20px 10px 10px 10px;
+    border-radius: 15px;
+}
+
+#item-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    transition: 0.2s ease-in-out;
+}
+
+#item-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+#item-title {
+    padding: 10px 10px 5px 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#item-category {
+    padding: 0px 15px 0px 10px;
+    color: #272727;
+    font-size: 12px;
+    display: inline;
+}
+
+#item-rating {
+    float: right;
+    font-size: 12px;
+    display: inline;
+    padding-right: 30px;
+    color: #454545;
+}
+
+#item-price {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 700;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 50%;
+    float: left;
+}
+
+#item-description {
+    padding: 10px 15px 0px 10px;
+    color: #272727;
+    font-size: 12px;
+}
+
+#item-box:hover .button-add-to-cart {
+    display: block;
+    cursor: pointer;
+}
+
+.button-add-to-cart {
+    min-height: 20px;
+    min-width: 30px;
+    font-size: 0;
+    float: right;
+    display: none;
+    margin: 10px 20px 10px 0px;
+    bottom: 0;
+    outline: none;
+    border: none;
+    padding: 0;
+    background-image: url("images/cart.png");
+    background-size: auto 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+
+}
+
+.button-add-to-cart.isActive-true {
+
+    background-image: url("images/cart-checked.png");
+}
+
+.item-linkto {
+    text-decoration: none;
+    color: inherit;
+    cursor:pointer;
+}
